@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Paper Calculator
+        </title>
+        <body>
+            <header>
+            <nav>
+                <ul class="Navigation">
+                    <button onclick="document.location = 'index.html'">Home</button>
+                    <button onclick="document.location = 'What_is_paper_wastage.html'">What is Paper Wastage?</button>
+                    <button onclick="document.location = 'Why_is_it_important.html'">Why is it important?</button>
+                    <button onclick="document.location = 'How_do_we_solve_Paper_Wastage.html'">How do we solve Paper Wastage?</button>
+                    <button onclick="document.location = 'feedback.html'">Feedback</button>
+                    <button onclick="document.location = 'PaperCalculator.html'">Paper Waste Calculator</button>
+                </ul>
+            </nav>
+        </header>
+        <section class="top">
+       <!-- something -->
+        </section>
+                    <section>
+                <h1>
+                    Paper Calculator
+                </h1>
+                <script>
+                    var amt_of_paper = prompt("How much paper do you use every day? (in terms of sheets)");
+                    var sum = (amt_of_paper/5);
+                    if (sum < 7) {
+                        document.write("You wasted " + sum + " trees for paper. You are saving a lot of trees. Good Job!!");
+                    } else {
+                        document.write("You wasted " + sum + " trees for paper. You should probably start reducing paper consumption.");
+                    }
+                </script>   
+                </section>             
+        </body>
+    </head>
+</html> 
